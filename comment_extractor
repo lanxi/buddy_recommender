@@ -1,0 +1,11 @@
+// setting up instance
+var reddit = new Snoocore({
+  userAgent: 'friend_finder@0.0.1 by /u/lanxih'
+});
+
+//make call to user comment endpoint
+reddit('/user/username/submitted').get().then(function(data){
+  var json = JSON.parse(data);
+  console.log(json.subreddit);
+},function(error){
+});
