@@ -1,0 +1,15 @@
+use heuristic method to rank the most influential users to the particular user
+leaderboard: most active users
+query: userID
+find: 
+  user comments and posts;
+  user subreddits
+  user points in each subreddit
+query:
+  most contributive users in each of these subreddits in order
+method:
+  find the 
+#1db:
+subreddit -> userID
+
+#2db:
